@@ -26,6 +26,7 @@
 		<!-- Custom Browsers Color End -->
 
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
 		<link href="css/uikit.min.css" rel="stylesheet">
 		<link href="css/main.min.css" rel="stylesheet">
 
@@ -591,22 +592,57 @@
 	</div>
 </section>
 
-<div class="form-call-wrapper">
-  <div class="form-call-btn">
-    <i class="form-call-phone-icon"></i>
+<div id="modal-full" class="uk-modal-full" uk-modal>
+	<div class="uk-modal-dialog">
+		<button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+		<div class="uk-grid-collapse">
+			<div class="callback-form__wrapper">
+				<img src="img/logo.png" alt="">
+				<h3 class="uk-h3">Заповніть форму та ми вам перетелефонуємо</h3>
+				<form class="callback-form">
+					<div class="uk-inline">
+						<span class="uk-form-icon" uk-icon="icon: user"></span>
+						<input placeholder="Ваше ім'я" class="uk-input" type="text">
+					</div>
+					<div class="uk-inline">
+						<span class="uk-form-icon" uk-icon="icon: receiver"></span>
+						<input id="tel" placeholder="Номер телефону" class="uk-input" type="text">
+					</div>
+
+					<div class="uk-inline form-submit">
+						<input value="Відправити" class="" type="submit">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+<a class="uk-visible@s" href="#modal-full" uk-toggle>
+  <div class="form-call-wrapper">
+    <div class="form-call-btn">
+      <i class="form-call-phone-icon"></i>
+    </div>
   </div>
-</div><div class="form-call-wrapper">
-  <div class="form-call-btn">
-    <i class="form-call-phone-icon"></i>
+
+  <div class="form-call-wrapper">
+    <div class="form-call-btn">
+      <i class="form-call-phone-icon"></i>
+    </div>
   </div>
+</a>
+
+<div class="mobile-float-button uk-hidden@s">
+
+  <a href="#modal-full" uk-toggle><i class="fas fa-phone"></i>Замовити дзвінок</a>
 </div>
 
  <script src="https://maps.googleapis.com/maps/api/js?key=
 AIzaSyC2O5Z8AFi8YV0lKKcW_Ao8OS6Ungx5nys
 &callback=initMap" async defer></script>
 
-
 <script src="js/scripts.min.js"></script>
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/jquery.inputmask.bundle.js"></script>
 
 
 </body>
