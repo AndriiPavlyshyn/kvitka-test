@@ -1,0 +1,153 @@
+.form-call-wrapper
+  -moz-border-radius: 0
+  -moz-box-shadow: none
+  -moz-opacity: 1
+  -webkit-border-radius: 0
+  -webkit-box-shadow: none
+  -webkit-opacity: 1
+  background: none
+  border-radius: 0
+  border: 0
+  box-shadow: none
+  display: block
+  float: none
+  font-style: normal
+  height: auto
+  letter-spacing: normal
+  max-height: none
+  max-width: none
+  opacity: 1
+  outline: 0
+  overflow: visible
+  position: static
+  text-decoration: none
+  text-transform: none
+  vertical-align: top
+  width: auto
+  word-spacing: normal
+
+.form-call-wrapper *
+  transition: 0.5s
+
+.form-call-wrapper
+  -webkit-font-smoothing: antialiased
+  bottom: 50px
+  cursor: pointer
+  font-size: 10px
+  height: $heightWidth
+  line-height: 80px
+  margin-left: -40px
+  margin-top: -40px
+  position: fixed
+  left: 90px
+  text-align: center
+  width: $heightWidth
+  z-index: 1000
+
+.form-call-wrapper:after,
+.form-call-wrapper:before
+  border-radius: 100%
+  box-sizing: border-box
+  content: ""
+  height: $heightWidth
+  left: 0
+  position: absolute
+  top: 0
+  transform-origin: center center
+  transition: 0.5s
+  width: $heightWidth
+  z-index: 9
+
+.form-call-wrapper:after
+  animation: lexprofitBackAnim 3s linear infinite
+  background: rgba($accent, 0.3)
+
+.form-call-wrapper:before
+  animation: lexprofitBorderAnim 3s -0.5s linear infinite
+  border: 1px solid lighten($accent, 10%)
+.form-call-wrapper .form-call-btn
+  background-color: $accent
+  border-radius: 100%
+  height: 100%
+  position: absolute
+  width: 100%
+  z-index: 10
+
+.form-call-wrapper .form-call-btn .form-call-phone-icon
+  font-family: "Font Awesome 5 Free"
+  font-size: 40px
+  font-style: normal
+  height: 100%
+  text-align: center
+  width: 100%
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  justify-content: center
+  align-items: center
+
+.form-call-wrapper .form-call-btn .form-call-phone-icon:before
+  font-weight: 900
+  font-size: 1.7rem
+  content: "\f095"
+  color: $white
+
+.form-call-wrapper:hover .form-call-btn
+  background-color: lighten($accent, 5%)
+
+.form-call-wrapper:hover:after
+  background-color: rgba($accent, 0.5)
+
+.form-call-wrapper:hover:before
+  border-color: #aaa
+
+.form-call-wrapper:hover .form-call-btn
+  animation: lexprofitBoundingAnim 1s linear infinite
+
+/*
+ * Animations
+ */
+@keyframes lexprofitBackAnim
+  0%
+    transform: scaleX(0.7) scaleY(0.7)
+
+  25%
+    transform: scaleX(1.2) scaleY(1.2)
+
+  50%
+    transform: scaleX(1.5) scaleY(1.5)
+
+  65%
+    transform: scaleX(1.2) scaleY(1.2)
+    opacity: 0.7
+
+  100%
+    transform: scaleX(0.7) scaleY(0.7)
+    opacity: 0
+
+@keyframes lexprofitBorderAnim
+  0%
+    transform: scaleX(1) scaleY(1)
+
+  50%
+    transform: scaleX(1.5) scaleY(1.5)
+
+  100%
+    transform: scaleX(2) scaleY(2)
+    opacity: 0
+
+@keyframes lexprofitBoundingAnim
+  0%
+    transform: rotate(0deg)
+
+  15%
+    transform: rotate(15deg)
+
+  30%
+    transform: rotate(0deg)
+
+  45%
+    transform: rotate(-15deg)
+
+  60%
+    transform: rotate(0deg)

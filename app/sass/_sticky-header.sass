@@ -1,0 +1,75 @@
+header
+  position: fixed
+  width: 100%
+  background: $white
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  align-items: center
+  -webkit-transition: all 0.4s ease
+  transition: all 0.4s ease
+  transition: .5s
+
+  .uk-navbar-container
+    width: 100%
+    background: transparent !important
+
+  .burger
+    background-color: transparent
+    height: 50px
+    width: 50px
+    display: -webkit-flex
+    display: -ms-flex
+    display: flex
+    align-items: flex-start
+    flex-direction: column
+    justify-content: center
+    cursor: pointer
+
+    &:hover
+      .burger-line
+        &:last-child
+          width: 55%
+
+  .burger-line
+    height: 1px
+    background: $white
+    width: 55%
+    margin: 5px 0
+    transition: width .5s
+
+    &:last-child
+      width: 30%
+
+.header__nav
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  list-style: none
+  padding-left: 0
+
+  li
+    margin: 0 20px
+
+    a
+      text-transform: uppercase
+      color: $text
+      transition: .5s
+      padding: 15px 10px
+
+      &:hover
+        text-decoration: none
+        color: darken($accent, 5%)
+
+.header__content
+  width: 100%
+
+.number
+  margin-right: 50px
+
+  a
+    &:hover
+      text-decoration: none
+
+.header__logo
+  max-width: 300px

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title>Page name</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<!-- Template Basic Images End -->
+	<!-- Custom Browsers Color Start -->
+	<meta name="theme-color" content="#000">
+	<!-- Custom Browsers Color End -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+	<link href="libs/uikit/uikit.min.css" rel="stylesheet">
+	<link href="css/main.min.css" rel="stylesheet">
+</head>
+
+<body class="bus-page">
+	<!-- Header -->
+	<header class="header" uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
+		<nav class="uk-navbar-container" uk-navbar style="position: relative; z-index: 980;">
+			<a class="uk-navbar-item uk-logo header__logo" href="#">
+				<img src="img/logo.png" alt="">
+			</a>
+			<div class="uk-navbar-right uk-padding-small uk-padding-remove-top uk-padding-remove-bottom uk-visible@s uk-hidden@m">
+				<div class="header__phone">
+					<i class="fas fa-phone"></i>
+					<a href="tel:555-555-5555">+ 380 73 555 555</a>
+				</div>
+			</div>
+			<div class="uk-navbar-right uk-hidden@m">
+				<a class="uk-navbar-toggle" uk-navbar-toggle-icon href="#" uk-toggle="target: #offcanvas-overlay"></a>
+			</div>
+			<div id="offcanvas-overlay" uk-offcanvas="overlay: true; flip: true">
+				<div class="uk-offcanvas-bar">
+					<button class="uk-offcanvas-close" type="button" uk-close></button>
+					<ul class="uk-nav-default uk-nav-center uk-nav-parent-icon" uk-nav>
+						<li><a href="#">Основні пропозиції</a></li>
+						<li><a href="#">Гарячі пропозиції</a></li>
+						<li><a href="#">Контакти</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="uk-navbar-right uk-padding-small uk-padding-remove-top uk-padding-remove-bottom uk-visible@m mobile__no-magrin">
+				<div class="header__phone uk-visible@m">
+					<i class="fas fa-phone"></i>
+					<a href="tel:555-555-5555">+ 380 73 555 555</a>
+				</div>
+				<ul class="header__nav">
+					<li><a href="bus-tures.html">Автобусні тури</a></li>
+					<li><a href="#">Гарячі пропозиції</a></li>
+					<li><a href="#">Контакти</a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<div id="offcanvas-reveal" uk-offcanvas="mode: reveal; overlay: true">
+		<div class="uk-offcanvas-bar">
+			<button class="uk-offcanvas-close" type="button" uk-close></button>
+			<ul class="uk-list">
+				<li class="uk-active"><a href="#">Active</a></li>
+				<li><a href="#">Item</a></li>
+				<li><a href="#">Parent</a></li>
+				<li><a href="#">Item</a></li>
+				<li><a href="#">Parent</a></li>
+				<li><a href="#">Item</a></li>
+				<li><a href="#">Parent</a></li>
+				<li><a href="#">Item</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- Bus search -->
+	<section class="">
+		<div class="bus-frame__wrapper">
+			<iframe src="https://www.adriatic-travel.com.ua/freim.php?agent=2468&width=770&currency=UAH&lang=ua" id="mmoa" name="mmoa" style="position: relative; text-align: center; float: bottom; display: block; overflow:hidden; width: 100%; height: 90vh;" frameborder="0"></iframe>
+		</div>
+	</section>
+	<!-- Float button -->
+	<a class="uk-visible@s" href="#modal-full" uk-toggle>
+		<div class="form-call-wrapper">
+			<div class="form-call-btn">
+				<i class="form-call-phone-icon"></i>
+			</div>
+		</div>
+		<div class="form-call-wrapper">
+			<div class="form-call-btn">
+				<i class="form-call-phone-icon"></i>
+			</div>
+		</div>
+	</a>
+	<div class="mobile-float-button uk-hidden@s">
+		<a href="#modal-full" uk-toggle><i class="fas fa-phone"></i>Замовити дзвінок</a>
+	</div>
+	<!-- Footer -->
+	<footer>
+		<div class="uk-container copyright">
+			<p>&lt/&gt with <i uk-icon="heart"></i> by <a href="http://andriy-pavlyshyn.com/">Andriy Pavlyshyn</a></p>
+		</div>
+	</footer>
+	<script type="text/javascript" src="https://www.adriatic-travel.com.ua/freim.js"></script>
+	<!-- To top -->
+	<a uk-totop uk-scroll class="js-back-to-top back-to-top"></a>
+	<script src="js/scripts.min.js"></script>
+</body>
+
+</html>
