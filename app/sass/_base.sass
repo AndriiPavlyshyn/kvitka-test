@@ -41,3 +41,46 @@ b, strong
 	&:hover
 		background-color: darken($accent, 5%)
 		color: $white
+
+.arrow-button
+	width: 40px
+	height: 40px
+	display: -webkit-flex
+	display: -ms-flex
+	display: flex
+	align-items: center
+	justify-content: center
+	border-radius: 100%
+	background-color: $accent
+	transition: .5s
+
+	i
+		color: #fff
+
+	&:hover
+		background-color: darken($accent, 10%)
+
+// Titles
+
+.title
+	font-size: 3rem
+	font-weight: bold
+	color: $text
+	text-transform: uppercase
+	position: relative
+	text-align: center
+	// padding-left: 60px
+	margin-bottom: 50px
+
+	&.light
+		color: #fff
+
+	// &::before
+	// 	content: ''
+	// 	width: 50px
+	// 	height: 50px
+	// 	position: absolute
+	// 	left: 0
+	// 	top: 15%
+	// 	background-image: url('./../img/icons/rose.svg')
+	// 	animation: rotating 30s linear infinite
