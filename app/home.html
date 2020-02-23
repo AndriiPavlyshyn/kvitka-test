@@ -17,6 +17,7 @@
 	<!-- Custom Browsers Color End -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
 	<link href="libs/uikit/uikit.min.css" rel="stylesheet">
+	<link href='https://api.mapbox.com/mapbox-gl-js/v1.8.0/mapbox-gl.css' rel='stylesheet' />
 	<link href="css/main.min.css" rel="stylesheet">
 </head>
 
@@ -530,219 +531,202 @@
 				</div>
 			</div>
 			<div class="more-button__wrapper">
-			<a class="uk-button uk-button--more-countries uk-button-default" href="#">Усі країни</a>
+				<a class="uk-button uk-button--more-countries uk-button-default" href="#">Усі країни</a>
 			</div>
 		</div>
 	</section>
 	<!-- Types -->
 	<section class="section--types">
 		<div style="background-image: url('img/1.jpg');" class="types__wrapper" uk-parallax="bgy: -100">
-		    <div class="types__content">
-					<h2 class="h2 title light">Типи відпочинку</h2>
-					<div class="propositions__slider types__slider uk-position-relative uk-visible-toggle" uk-slider="">
-						<ul class="uk-slider-items uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-5@m uk-grid">
-							<li>
-								<div class="uk-card uk-card-hover uk-card-default">
-									<a href="#">
-										<div class="uk-card-media-top">
-											<img src="img/2.jpg" alt="">
+			<div class="types__content">
+				<h2 class="h2 title light">Типи відпочинку</h2>
+				<div class="propositions__slider types__slider uk-position-relative uk-visible-toggle" uk-slider="">
+					<ul class="uk-slider-items uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-5@m uk-grid">
+						<li>
+							<div class="uk-card uk-card-hover uk-card-default">
+								<a href="#">
+									<div class="uk-card-media-top">
+										<img src="img/2.jpg" alt="">
+									</div>
+									<div class="uk-card-body proposition__item">
+										<h3 class="uk-h3">Мальдіви</h3>
+										<div class="arrow-button">
+											<i class="fas fa-arrow-right"></i>
 										</div>
-										<div class="uk-card-body proposition__item">
-											<h3 class="uk-h3">Мальдіви</h3>
-											<div class="arrow-button">
-												<i class="fas fa-arrow-right"></i>
-											</div>
+									</div>
+								</a>
+							</div>
+						</li>
+						<li>
+							<div class="uk-card uk-card-hover uk-card-default">
+								<a href="#">
+									<div class="uk-card-media-top">
+										<img src="img/2.jpg" alt="">
+									</div>
+									<div class="uk-card-body proposition__item">
+										<h3 class="uk-h3">Мальдіви</h3>
+										<div class="arrow-button">
+											<i class="fas fa-arrow-right"></i>
 										</div>
-									</a>
-								</div>
-							</li>
-							<li>
-								<div class="uk-card uk-card-hover uk-card-default">
-									<a href="#">
-										<div class="uk-card-media-top">
-											<img src="img/2.jpg" alt="">
+									</div>
+								</a>
+							</div>
+						</li>
+						<li>
+							<div class="uk-card uk-card-hover uk-card-default">
+								<a href="#">
+									<div class="uk-card-media-top">
+										<img src="img/2.jpg" alt="">
+									</div>
+									<div class="uk-card-body proposition__item">
+										<h3 class="uk-h3">Мальдіви</h3>
+										<div class="arrow-button">
+											<i class="fas fa-arrow-right"></i>
 										</div>
-										<div class="uk-card-body proposition__item">
-											<h3 class="uk-h3">Мальдіви</h3>
-											<div class="arrow-button">
-												<i class="fas fa-arrow-right"></i>
-											</div>
+									</div>
+								</a>
+							</div>
+						</li>
+						<li>
+							<div class="uk-card uk-card-hover uk-card-default">
+								<a href="#">
+									<div class="uk-card-media-top">
+										<img src="img/2.jpg" alt="">
+									</div>
+									<div class="uk-card-body proposition__item">
+										<h3 class="uk-h3">Мальдіви</h3>
+										<div class="arrow-button">
+											<i class="fas fa-arrow-right"></i>
 										</div>
-									</a>
-								</div>
-							</li>
-							<li>
-								<div class="uk-card uk-card-hover uk-card-default">
-									<a href="#">
-										<div class="uk-card-media-top">
-											<img src="img/2.jpg" alt="">
+									</div>
+								</a>
+							</div>
+						</li>
+						<li>
+							<div class="uk-card uk-card-hover uk-card-default">
+								<a href="#">
+									<div class="uk-card-media-top">
+										<img src="img/2.jpg" alt="">
+									</div>
+									<div class="uk-card-body proposition__item">
+										<h3 class="uk-h3">Мальдіви</h3>
+										<div class="arrow-button">
+											<i class="fas fa-arrow-right"></i>
 										</div>
-										<div class="uk-card-body proposition__item">
-											<h3 class="uk-h3">Мальдіви</h3>
-											<div class="arrow-button">
-												<i class="fas fa-arrow-right"></i>
-											</div>
+									</div>
+								</a>
+							</div>
+						</li>
+						<li>
+							<div class="uk-card uk-card-hover uk-card-default">
+								<a href="#">
+									<div class="uk-card-media-top">
+										<img src="img/1.jpg" alt="">
+									</div>
+									<div class="uk-card-body proposition__item">
+										<h3 class="uk-h3">Мальдіви</h3>
+										<div class="arrow-button">
+											<i class="fas fa-arrow-right"></i>
 										</div>
-									</a>
-								</div>
-							</li>
-							<li>
-								<div class="uk-card uk-card-hover uk-card-default">
-									<a href="#">
-										<div class="uk-card-media-top">
-											<img src="img/2.jpg" alt="">
+									</div>
+								</a>
+							</div>
+						</li>
+						<li>
+							<div class="uk-card uk-card-hover uk-card-default">
+								<a href="#">
+									<div class="uk-card-media-top">
+										<img src="img/3.jpg" alt="">
+									</div>
+									<div class="uk-card-body proposition__item">
+										<h3 class="uk-h3">Мальдіви</h3>
+										<div class="arrow-button">
+											<i class="fas fa-arrow-right"></i>
 										</div>
-										<div class="uk-card-body proposition__item">
-											<h3 class="uk-h3">Мальдіви</h3>
-											<div class="arrow-button">
-												<i class="fas fa-arrow-right"></i>
-											</div>
+									</div>
+								</a>
+							</div>
+						</li>
+						<li>
+							<div class="uk-card uk-card-hover uk-card-default">
+								<a href="#">
+									<div class="uk-card-media-top">
+										<img src="img/2.jpg" alt="">
+									</div>
+									<div class="uk-card-body proposition__item">
+										<h3 class="uk-h3">Мальдіви</h3>
+										<div class="arrow-button">
+											<i class="fas fa-arrow-right"></i>
 										</div>
-									</a>
-								</div>
-							</li>
-							<li>
-								<div class="uk-card uk-card-hover uk-card-default">
-									<a href="#">
-										<div class="uk-card-media-top">
-											<img src="img/2.jpg" alt="">
+									</div>
+								</a>
+							</div>
+						</li>
+						<li>
+							<div class="uk-card uk-card-hover uk-card-default">
+								<a href="#">
+									<div class="uk-card-media-top">
+										<img src="img/1.jpg" alt="">
+									</div>
+									<div class="uk-card-body proposition__item">
+										<h3 class="uk-h3">Мальдіви</h3>
+										<div class="arrow-button">
+											<i class="fas fa-arrow-right"></i>
 										</div>
-										<div class="uk-card-body proposition__item">
-											<h3 class="uk-h3">Мальдіви</h3>
-											<div class="arrow-button">
-												<i class="fas fa-arrow-right"></i>
-											</div>
+									</div>
+								</a>
+							</div>
+						</li>
+						<li>
+							<div class="uk-card uk-card-hover uk-card-default">
+								<a href="#">
+									<div class="uk-card-media-top">
+										<img src="img/3.jpg" alt="">
+									</div>
+									<div class="uk-card-body proposition__item">
+										<h3 class="uk-h3">Мальдіви</h3>
+										<div class="arrow-button">
+											<i class="fas fa-arrow-right"></i>
 										</div>
-									</a>
-								</div>
-							</li>
-							<li>
-								<div class="uk-card uk-card-hover uk-card-default">
-									<a href="#">
-										<div class="uk-card-media-top">
-											<img src="img/1.jpg" alt="">
-										</div>
-										<div class="uk-card-body proposition__item">
-											<h3 class="uk-h3">Мальдіви</h3>
-											<div class="arrow-button">
-												<i class="fas fa-arrow-right"></i>
-											</div>
-										</div>
-									</a>
-								</div>
-							</li>
-							<li>
-								<div class="uk-card uk-card-hover uk-card-default">
-									<a href="#">
-										<div class="uk-card-media-top">
-											<img src="img/3.jpg" alt="">
-										</div>
-										<div class="uk-card-body proposition__item">
-											<h3 class="uk-h3">Мальдіви</h3>
-											<div class="arrow-button">
-												<i class="fas fa-arrow-right"></i>
-											</div>
-										</div>
-									</a>
-								</div>
-							</li>
-							<li>
-								<div class="uk-card uk-card-hover uk-card-default">
-									<a href="#">
-										<div class="uk-card-media-top">
-											<img src="img/2.jpg" alt="">
-										</div>
-										<div class="uk-card-body proposition__item">
-											<h3 class="uk-h3">Мальдіви</h3>
-											<div class="arrow-button">
-												<i class="fas fa-arrow-right"></i>
-											</div>
-										</div>
-									</a>
-								</div>
-							</li>
-							<li>
-								<div class="uk-card uk-card-hover uk-card-default">
-									<a href="#">
-										<div class="uk-card-media-top">
-											<img src="img/1.jpg" alt="">
-										</div>
-										<div class="uk-card-body proposition__item">
-											<h3 class="uk-h3">Мальдіви</h3>
-											<div class="arrow-button">
-												<i class="fas fa-arrow-right"></i>
-											</div>
-										</div>
-									</a>
-								</div>
-							</li>
-							<li>
-								<div class="uk-card uk-card-hover uk-card-default">
-									<a href="#">
-										<div class="uk-card-media-top">
-											<img src="img/3.jpg" alt="">
-										</div>
-										<div class="uk-card-body proposition__item">
-											<h3 class="uk-h3">Мальдіви</h3>
-											<div class="arrow-button">
-												<i class="fas fa-arrow-right"></i>
-											</div>
-										</div>
-									</a>
-								</div>
-							</li>
-						</ul>
-						<a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-						<a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
-					</div>
-		    </div>
+									</div>
+								</a>
+							</div>
+						</li>
+					</ul>
+					<a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+					<a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+				</div>
+			</div>
 		</div>
 	</section>
 	<!-- Contacts -->
-	<section class="uk-section contacts">
+	<section class="uk-section section--contacts">
 		<div class="contacts__grid grid">
-			<div uk-scrollspy="cls:uk-animation-slide-left-medium" class="contacts__map">
-				<div class="map" id="map"></div>
-			</div>
 			<div uk-scrollspy="cls:uk-animation-fade" class="contacts__address">
-				<h2 class="uk-h2 contacts__h2">Контакти</h2>
-				<ul class="uk-list proposition__list contacts__list">
-					<li>
-						<i class="fas fa-phone"></i>
-						<a href="tel:555-555-5555">+ 380 73 555 555</a>
-					</li>
-					<li>
-						<i class="fas fa-envelope"></i>
-						<a href="mailto:examplemail@gmail.com">examplemail@gmail.com</a>
-					</li>
-					<li>
-						<i class="fas fa-map-marker-alt"></i>
-						<p>м. Львів, вул. Героїв УПА 29</p>
-					</li>
-				</ul>
-				<h2 class="uk-h2 contacts__h2">Соцмережі</h2>
-				<ul class="uk-list proposition__list contacts__socials">
-					<li>
-						<a href="#">
-							<i class="fab fa-facebook"></i>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<i class="fab fa-telegram"></i>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<i class="fab fa-instagram"></i>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<i class="fab fa-instagram"></i>
-						</a>
-					</li>
-				</ul>
+				<h2 class="h2 title">Зв'язок з нами</h2>
+				<form class="home__form callback-form">
+					<div class="uk-inline">
+						<span class="uk-form-icon" uk-icon="icon: user"></span>
+						<input id="home_name" placeholder="Ваше ім'я" class="uk-input" type="text">
+					</div>
+					<div class="uk-inline">
+						<span class="uk-form-icon" uk-icon="icon: receiver"></span>
+						<input id="home_tel" placeholder="Номер телефону" class="uk-input" type="text">
+					</div>
+					<div class="uk-inline">
+						<span class="uk-form-icon" uk-icon="icon: mail"></span>
+						<input id="home_mail" placeholder="Ваш e-mail" class="uk-input" type="text">
+					</div>
+					<div class="uk-inline">
+						<textarea class="uk-textarea home__textarea" placeholder="Ваші побажання" name="" id="home_textarea"></textarea>
+					</div>
+					<div class="uk-inline form-submit">
+						<input value="Відправити" class="" type="submit">
+					</div>
+				</form>
+			</div>
+			<div uk-scrollspy="cls:uk-animation-slide-left-medium" class="contacts__map">
+				<div id='map' style='width: 100%; height: 600px;'></div>
 			</div>
 		</div>
 	</section>
@@ -788,15 +772,145 @@
 		<a href="#modal-full" uk-toggle><i class="fas fa-phone"></i>Замовити дзвінок</a>
 	</div>
 	<!-- Footer -->
-	<footer>
+	<footer class="footer">
+		<div class="uk-container">
+			<div class="footer__grid grid">
+				<div class="footer__item">
+					<h2 class="uk-h2 contacts__h2">Контакти</h2>
+					<ul class="uk-list proposition__list contacts__list">
+						<li>
+							<i class="fas fa-phone"></i>
+							<a href="tel:555-555-5555">+ 380 73 555 555</a>
+						</li>
+						<li>
+							<i class="fas fa-envelope"></i>
+							<a href="mailto:examplemail@gmail.com">examplemail@gmail.com</a>
+						</li>
+						<li>
+							<i class="fas fa-map-marker-alt"></i>
+							<p>м. Львів, вул. Героїв УПА 29</p>
+						</li>
+						<li>
+							<i class="far fa-clock"></i>
+							<p>Режим роботи: Пн – Сб: <strong>9:00-19:00</strong></p>
+						</li>
+					</ul>
+					<h2 class="uk-h2 contacts__h2">Соцмережі</h2>
+					<ul class="uk-list proposition__list contacts__socials">
+						<li>
+							<a href="#">
+								<i class="fab fa-facebook"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fab fa-telegram"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fab fa-instagram"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fab fa-instagram"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__item">
+					<h2 class="uk-h2 contacts__h2">Країни</h2>
+					<ul class="uk-list proposition__list contacts__list">
+						<li>
+							<a href="#">Греція</a>
+						</li>
+						<li>
+							<a href="#">Домінікана</a>
+						</li>
+						<li>
+							<a href="#">Єгипет</a>
+						</li>
+						<li>
+							<a href="#">Індія</a>
+						</li>
+						<li>
+							<a href="#">Іспанія</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__item">
+					<h2 class="uk-h2 contacts__h2">Послуги</h2>
+					<ul class="uk-list proposition__list contacts__list">
+						<li>
+							<a href="#">Продаж турів</a>
+						</li>
+						<li>
+							<a href="#">Авіаквитки</a>
+						</li>
+						<li>
+							<a href="#">Візова підтримка</a>
+						</li>
+						<li>
+							<a href="#">Страхування</a>
+						</li>
+						<li>
+							<a href="#">Навчання за кордоном</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
 		<div class="uk-container copyright">
-			<p>&lt/&gt with <i uk-icon="heart"></i> by <a href="http://andriy-pavlyshyn.com/">Andriy Pavlyshyn</a></p>
+			<p>&lt/&gt with <strong>❤️</strong> by <a href="http://andrii-pavlyshyn.com/">Andrii Pavlyshyn</a></p>
 		</div>
 	</footer>
 	<script type="text/javascript" src="https://www.adriatic-travel.com.ua/freim.js"></script>
 	<!-- To top -->
 	<a uk-totop uk-scroll class="js-back-to-top back-to-top"></a>
 	<script src="js/scripts.min.js"></script>
+	<script src='https://api.mapbox.com/mapbox-gl-js/v1.8.0/mapbox-gl.js'></script>
+	<script>
+		mapboxgl.accessToken = "pk.eyJ1IjoiNGFybGVzcyIsImEiOiJjazZ5dTBjbGIwM3hyM25wZzJwZjd3Ynl1In0.aNdeE-YTe8HCE1JJCXP33g";
+		/* Map: This represents the map on the page. */
+		var map = new mapboxgl.Map({
+			container: "map",
+			style: "mapbox://styles/4arless/ck6ywcaj23qfa1iqre840eoux",
+			zoom: 17,
+			center: [24.0104, 49.8332]
+		});
+		map.scrollZoom.disable()
+		map.on("load", function() {
+			/* Image: An image is loaded and added to the map. */
+			map.loadImage("https://i.imgur.com/MK4NUzI.png", function(error, image) {
+				if (error) throw error;
+				map.addImage("custom-marker", image);
+				/* Style layer: A style layer ties together the source and image and specifies how they are displayed on the map. */
+				map.addLayer({
+					id: "markers",
+					type: "symbol",
+					/* Source: A data source specifies the geographic coordinate where the image marker gets placed. */
+					source: {
+						type: "geojson",
+						data: {
+							type: 'FeatureCollection',
+							features: [{
+								type: 'Feature',
+								properties: {},
+								geometry: {
+									type: "Point",
+									coordinates: [24.0104, 49.833]
+								}
+							}]
+						}
+					},
+					layout: {
+						"icon-image": "custom-marker",
+					}
+				});
+			});
+		});
+	</script>
 </body>
 
 </html>
