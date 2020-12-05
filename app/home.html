@@ -700,33 +700,35 @@
 	</section>
 	<!-- Contacts -->
 	<section class="uk-section section--contacts">
-		<div class="contacts__grid grid">
-			<div uk-scrollspy="cls:uk-animation-fade" class="contacts__address">
-				<h2 class="h2 title">Зв'язок з нами</h2>
-				<form class="home__form callback-form">
-					<div class="uk-inline">
-						<span class="uk-form-icon" uk-icon="icon: user"></span>
-						<input id="home_name" placeholder="Ваше ім'я" class="uk-input" type="text">
-					</div>
-					<div class="uk-inline">
-						<span class="uk-form-icon" uk-icon="icon: receiver"></span>
-						<input id="home_tel" placeholder="Номер телефону" class="uk-input" type="text">
-					</div>
-					<div class="uk-inline">
-						<span class="uk-form-icon" uk-icon="icon: mail"></span>
-						<input id="home_mail" placeholder="Ваш e-mail" class="uk-input" type="text">
-					</div>
-					<div class="uk-inline">
-						<textarea class="uk-textarea home__textarea" placeholder="Ваші побажання" name="" id="home_textarea"></textarea>
-					</div>
-					<div class="uk-inline form-submit">
-						<input value="Відправити" class="" type="submit">
-					</div>
-				</form>
+		<div class="uk-container">
+			<div class="contacts__grid grid">
+				<div uk-scrollspy="cls:uk-animation-fade" class="contacts__address">
+					<h2 class="h2 title">Зв'язок з нами</h2>
+					<form class="home__form callback-form">
+						<div class="uk-inline">
+							<span class="uk-form-icon" uk-icon="icon: user"></span>
+							<input id="home_name" placeholder="Ваше ім'я" class="uk-input" type="text">
+						</div>
+						<div class="uk-inline">
+							<span class="uk-form-icon" uk-icon="icon: receiver"></span>
+							<input id="home_tel" placeholder="Номер телефону" class="uk-input" type="text">
+						</div>
+						<div class="uk-inline">
+							<span class="uk-form-icon" uk-icon="icon: mail"></span>
+							<input id="home_mail" placeholder="Ваш e-mail" class="uk-input" type="text">
+						</div>
+						<div class="uk-inline">
+							<textarea class="uk-textarea home__textarea" placeholder="Ваші побажання" name="" id="home_textarea"></textarea>
+						</div>
+						<div class="uk-inline form-submit">
+							<input value="Відправити" class="" type="submit">
+						</div>
+					</form>
+				</div>
 			</div>
-			<div uk-scrollspy="cls:uk-animation-slide-left-medium" class="contacts__map">
-				<div id='map' style='width: 100%; height: 600px;'></div>
-			</div>
+		</div>
+		<div uk-scrollspy="cls:uk-animation-slide-left-medium" class="contacts__map">
+			<div id='map' style='width: 100%; height: 600px;'></div>
 		</div>
 	</section>
 	<!-- Contacts form -->

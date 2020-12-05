@@ -177,7 +177,7 @@
     padding: 15px
 
   .uk-inline
-    width: 100%
+    width: calc(100% - 10px)
 
 input[type="submit"]
   background-color: $accent
@@ -636,7 +636,7 @@ input[type="submit"]
       text-decoration: none
 
 .countries__grid
-  grid-template-columns: repeat(auto-fill, minmax(300px, calc(33.3% - 20px)))
+  grid-template-columns: repeat(3, 1fr)
   grid-gap: 30px
 
   .uk-card

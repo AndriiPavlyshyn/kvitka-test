@@ -1,3 +1,41 @@
+@media only screen and (max-width : 960px)
+    .section--countries
+        @include angled-edge('inside top', 'lower right', $white, 50)
+        @include angled-edge('outside bottom', 'lower left', $accent, 50)
+        padding-top: 80px
+        padding-bottom: 30px
+
+    .propositions
+
+        .uk-slidenav
+            padding: 10px 10px
+        
+        .propositions__slider
+            padding-bottom: 30px
+
+    .countries__grid
+        grid-template-columns: repeat(2, 1fr)
+
+    .section--types
+        @include angled-edge('inside bottom', 'upper left', #fff, 50)
+
+    .types__wrapper
+        padding: 80px 20px
+
+        .uk-slidenav-previous,
+        .uk-slidenav-next
+            margin: 5px
+            padding: 10px
+
+    .footer__grid
+        grid-template-columns: repeat(2, 1fr)
+
+    .section--contacts
+        @include angled-edge('inside bottom', 'upper left', #121212, 50)
+
+    .footer
+        padding-top: 0
+    
 @media only screen and (max-width : 640px)
     .header-slider
         h3
@@ -14,7 +52,25 @@
 
     .propositions 
         .uk-slidenav-previous
-            left: 10%
+            left: 11%
 
         .uk-slidenav-next
-            right: 10%
+            right: 11%
+
+    .countries__grid
+        grid-template-columns: 1fr
+
+    .home__form 
+        grid-template-columns: 1fr
+        
+        .uk-inline
+            width: 100%
+
+            &:nth-child(3), 
+            &:nth-child(4), 
+            &:nth-child(5), 
+                grid-column-start: 1
+                grid-column-end: 1
+
+    .footer__grid
+        grid-template-columns: 1fr

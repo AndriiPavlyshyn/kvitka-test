@@ -4549,6 +4549,12 @@ header .burger-line:last-child {
   .header__logo {
     width: 200px;
   }
+  .back-to-top {
+    width: 30px;
+    height: 30px;
+    bottom: 60px;
+    right: 10px;
+  }
 }
 
 @media only screen and (max-width: 640px) {
