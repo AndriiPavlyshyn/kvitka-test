@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title>Home page</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<!-- Template Basic Images End -->
+	<!-- Custom Browsers Color Start -->
+	<meta name="theme-color" content="#000">
+	<!-- Custom Browsers Color End -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+	<link href="libs/uikit/uikit.min.css" rel="stylesheet">
+	<link href='https://api.mapbox.com/mapbox-gl-js/v1.8.0/mapbox-gl.css' rel='stylesheet' />
+	<link href="css/main.min.css" rel="stylesheet">
+	<link href="css/countriesSection/countriesSection.min.css" rel="stylesheet">
+</head>
+
+<body class="">
+	<!-- Header -->
+	<header class="header uk-box-shadow-large" uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
+		<nav class="uk-navbar-container" uk-navbar style="position: relative; z-index: 980;">
+			<a class="uk-navbar-item uk-logo header__logo" href="#">
+				<img src="img/logo.png" alt="">
+			</a>
+			<div class="uk-navbar-right uk-padding-small uk-padding-remove-top uk-padding-remove-bottom uk-hidden@l">
+				<div class="header__phone uk-visible@s">
+					<i class="fas fa-phone"></i>
+					<a href="tel:555-555-5555">+ 380 73 555 555</a>
+				</div>
+				<a class="uk-navbar-toggle" uk-navbar-toggle-icon href="#" uk-toggle="target: #offcanvas-overlay"></a>
+			</div>
+			<div id="offcanvas-overlay" uk-offcanvas="overlay: true; flip: true">
+				<div class="uk-offcanvas-bar">
+					<button class="uk-offcanvas-close" type="button" uk-close></button>
+					<ul class="uk-nav-default uk-nav-center uk-nav-parent-icon" uk-nav>
+						<li><a href="#">Основні пропозиції</a></li>
+						<li><a href="#">Гарячі пропозиції</a></li>
+						<li><a href="#">Контакти</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="uk-navbar-right uk-padding-small uk-padding-remove-top uk-padding-remove-bottom uk-visible@l mobile__no-magrin">
+				<div class="header__phone uk-visible@l">
+					<i class="fas fa-phone"></i>
+					<a href="tel:555-555-5555">+ 380 73 555 555</a>
+				</div>
+				<ul class="header__nav">
+					<li><a href="bus-tures.html">Автобусні тури</a></li>
+					<li><a href="#">Гарячі пропозиції</a></li>
+					<li><a href="#">Контакти</a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<div id="offcanvas-reveal" uk-offcanvas="mode: reveal; overlay: true">
+		<div class="uk-offcanvas-bar">
+			<button class="uk-offcanvas-close" type="button" uk-close></button>
+			<ul class="uk-list">
+				<li class="uk-active"><a href="#">Active</a></li>
+				<li><a href="#">Item</a></li>
+				<li><a href="#">Parent</a></li>
+				<li><a href="#">Item</a></li>
+				<li><a href="#">Parent</a></li>
+				<li><a href="#">Item</a></li>
+				<li><a href="#">Parent</a></li>
+				<li><a href="#">Item</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- Countries -->
+	<section class="section--countries section--countries-page">
+		<div class="uk-container">
+			<h2 class="h2 title light">Країни</h2>
+			<div class="countries__grid grid">
+				<div class="uk-card uk-card-hover uk-card-default">
+					<a href="#">
+						<div class="uk-card-media-top">
+							<img src="img/1.jpg" alt="">
+						</div>
+						<div class="uk-card-body proposition__item">
+							<h3 class="uk-h3">Мальдіви</h3>
+							<div class="arrow-button">
+								<i class="fas fa-arrow-right"></i>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="uk-card uk-card-hover uk-card-default">
+					<a href="#">
+						<div class="uk-card-media-top">
+							<img src="img/2.jpg" alt="">
+						</div>
+						<div class="uk-card-body proposition__item">
+							<h3 class="uk-h3">Мальдіви</h3>
+							<div class="arrow-button">
+								<i class="fas fa-arrow-right"></i>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="uk-card uk-card-hover uk-card-default">
+					<a href="#">
+						<div class="uk-card-media-top">
+							<img src="img/3.jpg" alt="">
+						</div>
+						<div class="uk-card-body proposition__item">
+							<h3 class="uk-h3">Мальдіви</h3>
+							<div class="arrow-button">
+								<i class="fas fa-arrow-right"></i>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="uk-card uk-card-hover uk-card-default">
+					<a href="#">
+						<div class="uk-card-media-top">
+							<img src="img/3.jpg" alt="">
+						</div>
+						<div class="uk-card-body proposition__item">
+							<h3 class="uk-h3">Мальдіви</h3>
+							<div class="arrow-button">
+								<i class="fas fa-arrow-right"></i>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="uk-card uk-card-hover uk-card-default">
+					<a href="#">
+						<div class="uk-card-media-top">
+							<img src="img/1.jpg" alt="">
+						</div>
+						<div class="uk-card-body proposition__item">
+							<h3 class="uk-h3">Мальдіви</h3>
+							<div class="arrow-button">
+								<i class="fas fa-arrow-right"></i>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="more-button__wrapper">
+				<a class="uk-button uk-button--more-countries uk-button-default" href="#">Усі країни</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- Float button -->
+	<a class="uk-visible@s" href="#modal-full" uk-toggle>
+		<div class="form-call-wrapper">
+			<div class="form-call-btn">
+				<i class="form-call-phone-icon"></i>
+			</div>
+		</div>
+		<div class="form-call-wrapper">
+			<div class="form-call-btn">
+				<i class="form-call-phone-icon"></i>
+			</div>
+		</div>
+	</a>
+	<div class="mobile-float-button uk-hidden@s">
+		<a href="#modal-full" uk-toggle><i class="fas fa-phone"></i>Замовити дзвінок</a>
+	</div>
+	<!-- Footer -->
+	<footer class="footer">
+		<div class="uk-container">
+			<div class="footer__grid grid">
+				<div class="footer__item">
+					<h2 class="uk-h2 contacts__h2">Контакти</h2>
+					<ul class="uk-list proposition__list contacts__list">
+						<li>
+							<i class="fas fa-phone"></i>
+							<a href="tel:555-555-5555">+ 380 73 555 555</a>
+						</li>
+						<li>
+							<i class="fas fa-envelope"></i>
+							<a href="mailto:examplemail@gmail.com">examplemail@gmail.com</a>
+						</li>
+						<li>
+							<i class="fas fa-map-marker-alt"></i>
+							<p>м. Львів, вул. Героїв УПА 29</p>
+						</li>
+						<li>
+							<i class="far fa-clock"></i>
+							<p>Режим роботи: Пн – Сб: <strong>9:00-19:00</strong></p>
+						</li>
+					</ul>
+					<h2 class="uk-h2 contacts__h2">Соцмережі</h2>
+					<ul class="uk-list proposition__list contacts__socials">
+						<li>
+							<a href="#">
+								<i class="fab fa-facebook"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fab fa-telegram"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fab fa-instagram"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fab fa-instagram"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__item">
+					<h2 class="uk-h2 contacts__h2">Країни</h2>
+					<ul class="uk-list proposition__list contacts__list">
+						<li>
+							<a href="#">Греція</a>
+						</li>
+						<li>
+							<a href="#">Домінікана</a>
+						</li>
+						<li>
+							<a href="#">Єгипет</a>
+						</li>
+						<li>
+							<a href="#">Індія</a>
+						</li>
+						<li>
+							<a href="#">Іспанія</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__item">
+					<h2 class="uk-h2 contacts__h2">Послуги</h2>
+					<ul class="uk-list proposition__list contacts__list">
+						<li>
+							<a href="#">Продаж турів</a>
+						</li>
+						<li>
+							<a href="#">Авіаквитки</a>
+						</li>
+						<li>
+							<a href="#">Візова підтримка</a>
+						</li>
+						<li>
+							<a href="#">Страхування</a>
+						</li>
+						<li>
+							<a href="#">Навчання за кордоном</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="uk-container copyright">
+			<p>&lt/&gt with <strong>❤️</strong> by <a href="http://andrii-pavlyshyn.com/">Andrii Pavlyshyn</a></p>
+		</div>
+	</footer>
+	<script type="text/javascript" src="https://www.adriatic-travel.com.ua/freim.js"></script>
+	<!-- To top -->
+	<a uk-totop uk-scroll class="js-back-to-top back-to-top"></a>
+	<script src="js/scripts.min.js"></script>
+	<script src='https://api.mapbox.com/mapbox-gl-js/v1.8.0/mapbox-gl.js'></script>
+	<script>
+		mapboxgl.accessToken = "pk.eyJ1IjoiNGFybGVzcyIsImEiOiJjazZ5dTBjbGIwM3hyM25wZzJwZjd3Ynl1In0.aNdeE-YTe8HCE1JJCXP33g";
+		/* Map: This represents the map on the page. */
+		var map = new mapboxgl.Map({
+			container: "map",
+			style: "mapbox://styles/4arless/ck6ywcaj23qfa1iqre840eoux",
+			zoom: 17,
+			center: [24.0104, 49.8332]
+		});
+		map.scrollZoom.disable()
+		map.on("load", function() {
+			/* Image: An image is loaded and added to the map. */
+			map.loadImage("https://i.imgur.com/MK4NUzI.png", function(error, image) {
+				if (error) throw error;
+				map.addImage("custom-marker", image);
+				/* Style layer: A style layer ties together the source and image and specifies how they are displayed on the map. */
+				map.addLayer({
+					id: "markers",
+					type: "symbol",
+					/* Source: A data source specifies the geographic coordinate where the image marker gets placed. */
+					source: {
+						type: "geojson",
+						data: {
+							type: 'FeatureCollection',
+							features: [{
+								type: 'Feature',
+								properties: {},
+								geometry: {
+									type: "Point",
+									coordinates: [24.0104, 49.833]
+								}
+							}]
+						}
+					},
+					layout: {
+						"icon-image": "custom-marker",
+					}
+				});
+			});
+		});
+	</script>
+</body>
+
+</html>

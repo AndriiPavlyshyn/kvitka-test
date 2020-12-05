@@ -73,3 +73,25 @@ header
 
 .header__logo
   max-width: 300px
+
+.header__phone
+  padding-right: 30px
+  border-right: 2px solid $accent
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  align-items: center
+
+  i
+    margin-right: 10px
+    color: $accent
+
+  a
+    font-size: 1.1rem
+    color: $accent
+    transition: color 0.5s
+
+    &:hover
+      text-decoration: none
+      color: darken($accent, 10%)
+
