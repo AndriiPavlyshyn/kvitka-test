@@ -4095,9 +4095,8 @@ b, strong {
       -ms-flex-align: center;
           align-items: center;
   display: grid;
-  grid-template-columns: repeat(3, 45px);
-  grid-column-gap: 10px;
-  grid-row-gap: 10px;
+  grid-template-columns: repeat(auto-fit, 45px);
+  grid-gap: 10px;
 }
 
 .contacts__socials li {
@@ -4318,6 +4317,17 @@ header .burger-line:last-child {
 
 .header__logo {
   max-width: 300px;
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  -o-transition: transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
+}
+
+.header__logo:hover {
+  -webkit-transform: scale(0.98);
+      -ms-transform: scale(0.98);
+          transform: scale(0.98);
 }
 
 .header__phone {
@@ -4642,8 +4652,8 @@ header .burger-line:last-child {
   right: 20px;
   bottom: 20px;
   z-index: 100;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   color: #fff;
   border: 1px solid #fff;
   background-color: #009ee0;
@@ -4759,7 +4769,12 @@ header .burger-line:last-child {
 }
 
 @media only screen and (max-width: 480px) {
-  /**/
+  .contacts__socials {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 @media only screen and (max-width: 320px) {
