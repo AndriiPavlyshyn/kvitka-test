@@ -31,19 +31,26 @@
 				<img src="img/logo.png" alt="">
 			</a>
 			<div class="uk-navbar-right uk-padding-small uk-padding-remove-top uk-padding-remove-bottom uk-hidden@l">
-				<div class="header__phone uk-visible@s">
-					<i class="fas fa-phone"></i>
-					<a href="tel:555-555-5555">+ 380 73 555 555</a>
-				</div>
 				<a class="uk-navbar-toggle" uk-navbar-toggle-icon href="#" uk-toggle="target: #offcanvas-overlay"></a>
 			</div>
 			<div id="offcanvas-overlay" uk-offcanvas="overlay: true; flip: true">
-				<div class="uk-offcanvas-bar">
+				<div class="uk-offcanvas-bar offcanvas-bar">
 					<button class="uk-offcanvas-close" type="button" uk-close></button>
-					<ul class="uk-nav-default uk-nav-center uk-nav-parent-icon" uk-nav>
+					<ul class="uk-nav-default uk-nav-parent-icon offcanvas-menu" uk-nav>
 						<li><a href="#">Основні пропозиції</a></li>
 						<li><a href="#">Гарячі пропозиції</a></li>
 						<li><a href="#">Контакти</a></li>
+					</ul>
+
+					<ul class="list offcanvas__phones-list">
+						<li class="header__phone">
+							<i class="fas fa-phone"></i>
+							<a href="tel:555-555-5555">+ 380 73 555 555</a>
+						</li>
+						<li class="header__phone">
+							<i class="fas fa-phone"></i>
+							<a href="tel:555-555-5555">+ 380 73 555 555</a>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -66,21 +73,6 @@
 			</div>
 		</nav>
 	</header>
-	<div id="offcanvas-reveal" uk-offcanvas="mode: reveal; overlay: true">
-		<div class="uk-offcanvas-bar">
-			<button class="uk-offcanvas-close" type="button" uk-close></button>
-			<ul class="uk-list">
-				<li class="uk-active"><a href="#">Active</a></li>
-				<li><a href="#">Item</a></li>
-				<li><a href="#">Parent</a></li>
-				<li><a href="#">Item</a></li>
-				<li><a href="#">Parent</a></li>
-				<li><a href="#">Item</a></li>
-				<li><a href="#">Parent</a></li>
-				<li><a href="#">Item</a></li>
-			</ul>
-		</div>
-	</div>
 	<!-- Header section -->
 	<section uk-scrollspy="cls:uk-animation-fade" class="header-slider">
 		<div class="uk-position-relative uk-visible-toggle" uk-slideshow="animation: push;">

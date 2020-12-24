@@ -4030,6 +4030,10 @@ b, strong {
   background-color: #007aad;
 }
 
+.list {
+  padding-left: 0;
+}
+
 .title {
   font-size: 3rem;
   font-weight: bold;
@@ -4360,6 +4364,44 @@ header .burger-line:last-child {
 .header__phone a:hover {
   text-decoration: none;
   color: #007aad;
+}
+
+.offcanvas-bar {
+  background-color: #009ee0;
+}
+
+.offcanvas-menu {
+  margin-top: 30px;
+}
+
+.offcanvas-menu li {
+  padding: 5px 0;
+  margin: 10px 0;
+}
+
+.offcanvas-menu li a {
+  font-size: 1rem;
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+  color: #fff !important;
+}
+
+.offcanvas-menu li a:hover {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.offcanvas__phones-list {
+  margin-top: 50px;
+}
+
+.offcanvas__phones-list li {
+  margin: 15px 0;
+}
+
+.offcanvas__phones-list li a,
+.offcanvas__phones-list li i {
+  color: #fff;
 }
 
 .form-call-wrapper {
