@@ -31,6 +31,9 @@ b, strong
 .grid
 	display: grid
 
+.section
+  padding: 80px 0
+
 .uk-button
 	background-color: $accent
 	color: $white
@@ -93,9 +96,15 @@ b, strong
   padding-bottom: 50px
 
 .contacts__list
+  li
+    display: flex
+    align-items: center
+
   p
     font-size: 1.2rem
     color: $white
+    margin-top: 0
+    margin-left: 20px
 
   a
     color: $white
@@ -113,6 +122,8 @@ b, strong
   i
     font-size: 1.2rem
     color: $white !important
+    height: 20px
+    width: 20px
 
 .contacts__socials
   align-items: center

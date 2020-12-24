@@ -1,0 +1,26 @@
+.blog__list
+  grid-template-columns: repeat(3, 1fr)
+
+.blog__item
+  position: relative
+  overflow: hidden
+  border-radius: 8px
+
+  &:hover
+    .blog__item-thumbnail
+      width: 105%
+      max-width: 110%
+
+.blog__item-thumbnail-wrapper
+  height: 220px
+  overflow: hidden
+  position: relative
+  display: flex
+  align-items: center
+  justify-content: center
+
+.blog__item-thumbnail
+  width: 100%
+  transition: all .5s
+  
+@import 'blogPageMedia'
