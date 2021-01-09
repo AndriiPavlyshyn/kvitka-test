@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Блог</title>
+	<title>Пост</title>
 	<meta name="description" content="">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -18,7 +18,7 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
 	<link href="libs/uikit/uikit.min.css" rel="stylesheet">
 	<link href="css/main.min.css" rel="stylesheet">
-	<link href="css/blogPage/blogPage.min.css" rel="stylesheet">
+	<link href="css/postPage/postPage.min.css" rel="stylesheet">
 </head>
 
 <body class="">
@@ -74,68 +74,52 @@
 		</div>
 	</div>
 
-	<section class="section section--blog-page-section">
+	<div id="light-box" uk-lightbox>
+		<a id="lightroom-link" class="uk-inline" href="">
+			<img src="" alt="">
+		</a>
+	</div>
+
+	<section 
+	uk-parallax="bgy: 100"
+	style="background-image: url('img/1.jpg');" 
+	class="section section--post-page-header-section">
+		<div class="post__header-content">
+			<div class="uk-container">
+				<h1 class="h1 post__title">Test post title</h1>
+				<div class="post__header-info">
+					<div class="post__author">
+						<i class="fas fa-user-circle"></i>
+						<h3 class="post__h3">Автор: Iryna</h3>
+					</div>
+					<div class="post__date">
+						<i class="fas fa-calendar"></i>
+						<h3 class="post__h3">19 січня 22:53</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section section--post-page-section">
 		<div class="uk-container">
-			<h1 class="h1 title">Блог</h1>
-			<ul class="grid list uk-list blog__list">
+			<div class="post__content">
+				<h1>H1 test</h1>
+				<h2>H2 test</h2>
+				<h3>H3 test</h3>
+				<h4>H4 test</h4>
+				<h5>H5 test</h5>
 
-				<li class="blog__item uk-card uk-card-hover uk-card-default">
-					<div class="blog__item-thumbnail-wrapper">
-						<img src="img/1.jpg" alt="" class="blog__item-thumbnail">
-					</div>
-					
-					<div class="blog__item-content-wrapper">
-						<div class="blog__item-content">
-							<h2 class="blog__item-title">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem, dolorum.</h2>
-							<p class="blog__item-desciption">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus sint molestias hic repellendus vitae nesciunt perspiciatis consequatur porro et nihil.</p>
-						</div>
-						<a class="uk-button uk-button-default" href="#">Дізнатись більше</a>
-					</div>
-				</li>
+				<ul>
+					<li>test item</li>
+					<li>test item</li>
+					<li>test item</li>
+				</ul>
 
-				<li class="blog__item uk-card uk-card-hover uk-card-default">
-					<div class="blog__item-thumbnail-wrapper">
-						<img src="img/2.jpg" alt="" class="blog__item-thumbnail">
-					</div>
-					
-					<div class="blog__item-content-wrapper">
-						<div class="blog__item-content">
-							<h2 class="blog__item-title">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem, dolorum.</h2>
-							<p class="blog__item-desciption">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus sint molestias hic repellendus vitae nesciunt perspiciatis consequatur porro et nihil.</p>
-						</div>
-						<a class="uk-button uk-button-default" href="#">Дізнатись більше</a>
-					</div>
-				</li>
-
-				<li class="blog__item uk-card uk-card-hover uk-card-default">
-					<div class="blog__item-thumbnail-wrapper">
-						<img src="img/3.jpg" alt="" class="blog__item-thumbnail">
-					</div>
-					
-					<div class="blog__item-content-wrapper">
-						<div class="blog__item-content">
-							<h2 class="blog__item-title">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem, dolorum.</h2>
-							<p class="blog__item-desciption">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus sint molestias hic repellendus vitae nesciunt perspiciatis consequatur porro et nihil.</p>
-						</div>
-						<a class="uk-button uk-button-default" href="#">Дізнатись більше</a>
-					</div>
-				</li>
-
-				<li class="blog__item uk-card uk-card-hover uk-card-default">
-					<div class="blog__item-thumbnail-wrapper">
-						<img src="img/3.jpg" alt="" class="blog__item-thumbnail">
-					</div>
-					
-					<div class="blog__item-content-wrapper">
-						<div class="blog__item-content">
-							<h2 class="blog__item-title">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem, dolorum.</h2>
-							<p class="blog__item-desciption">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus sint molestias hic repellendus vitae nesciunt perspiciatis consequatur porro et nihil.</p>
-						</div>
-						<a class="uk-button uk-button-default" href="#">Дізнатись більше</a>
-					</div>
-				</li>
-
-			</ul>
+				<a href="#">Test link</a>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate corporis, aut blanditiis officiis distinctio repellat consequatur aspernatur ipsa illum labore neque, mollitia voluptatum magni ducimus hic eius cumque, quaerat minus! Iure eaque culpa excepturi voluptate voluptatem nulla hic voluptatum reiciendis, alias labore ab blanditiis nobis, molestias eligendi quia! Autem, eaque.</p>
+				<img src="img/1.jpg" alt="">
+			</div>
 		</div>
 	</section>
 

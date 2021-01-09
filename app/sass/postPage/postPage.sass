@@ -1,0 +1,56 @@
+@import '../vars'
+
+.section--post-page-header-section
+  position: relative
+  padding-bottom: 20px
+  padding-top: 150px
+  background-position: 50% 50%
+
+  &::after
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-color: rgba($dark, .4)
+
+.post__title
+  font-size: 3.2rem
+  font-weight: bold
+  color: $white
+
+.post__header-content
+  position: relative
+  z-index: 5
+
+.post__header-info
+  width: 100% 
+  display: flex
+  justify-content: space-between
+  margin-top: 50px
+
+.post__author,
+.post__date
+  display: flex
+  align-items: center
+  color: $white
+
+.post__h3
+  margin: 0
+  margin-left: 10px
+  color: $white
+
+.post__content
+  *
+    transition: .5s
+
+  a
+    text-decoration: none
+    padding-bottom: 2px
+    border-bottom: 1px dotted transparent
+
+    &:hover
+      border-color: $accent
+  
+@import 'postPageMedia'

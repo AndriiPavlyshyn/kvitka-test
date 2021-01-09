@@ -3983,6 +3983,10 @@ b, strong {
   padding: 80px 0;
 }
 
+#light-box {
+  height: 0 !important;
+}
+
 .uk-button {
   background-color: #009ee0;
   color: #fff;
@@ -4820,6 +4824,9 @@ header .burger-line:last-child {
     height: 30px;
     bottom: 60px;
     right: 10px;
+  }
+  .section {
+    padding: 50px 0;
   }
 }
 

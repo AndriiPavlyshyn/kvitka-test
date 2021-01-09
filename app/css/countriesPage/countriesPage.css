@@ -5,3 +5,7 @@
 .section--countries-page::after, .section--countries-page::before {
   display: none;
 }
+
+.section--countries-page .countries__grid .uk-card {
+  overflow: hidden;
+}

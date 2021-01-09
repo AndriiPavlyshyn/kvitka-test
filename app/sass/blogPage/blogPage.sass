@@ -1,15 +1,21 @@
+@import '../vars'
+  
 .blog__list
   grid-template-columns: repeat(3, 1fr)
+  grid-gap: 30px
 
 .blog__item
   position: relative
   overflow: hidden
   border-radius: 8px
+  transition: all .5s
+  margin: 0 !important
 
   &:hover
     .blog__item-thumbnail
       width: 105%
-      max-width: 110%
+      height: 105%
+      max-width: 120%
 
 .blog__item-thumbnail-wrapper
   height: 220px
@@ -22,5 +28,14 @@
 .blog__item-thumbnail
   width: 100%
   transition: all .5s
+  height: 100%
+  object-fit: cover
+
+.blog__item-content-wrapper
+  padding: 20px
+
+.blog__item-title
+  font-size: $fz20
+  font-weight: bold
   
 @import 'blogPageMedia'
